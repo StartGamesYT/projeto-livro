@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-image: url(../Html-Css/desafios/projeto-cordel/imagens/ROG-Flow-X16-scenario-photo-gaming-with-Xbox-controller-in-tent-mode.webp);
+    background-position: center center;
+    background-attachment: fixed;
+    min-width: auto;
+    max-width: auto;
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-decoration: none;
+    text-decoration-line: none;
+    text-align: center;
+    text-size-adjust: initial;
+    text-shadow: 1px 2px 2px rgb(0, 0, 0);
+    font-size: 2em;
+    text-decoration-style: wavy;
+    margin-top: 20px;
+    
+
+}
+
+.menu{
+    box-shadow: 1px 2px 2px rgba(85, 6, 85, 0.651);
+}
+.menu p{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.menu h1{
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.menu ul{
+    list-style: georgian;
+    padding: 0px;
+    padding-top: 0px;
+    background-color: black;
+    text-align: end;
+    padding-bottom: 5px;
+    border-radius: 5px;
+}
+
+.menu ul li{
+    display: inline;
+}
+.menu ul a{
+    color: white;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: aqua;
+    transition: background .4s;
+    text-align: end;
+}
+
+.menu ul a:hover{
+    background-color: rgb(13, 160, 228);
+    border-radius: 10px;
+}
+
+header{
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    box-shadow: inset;
+    position: sticky;
+    border-radius: 3px;
+}
+
+.estilo{
+    min-width: 150px;
+    max-width: 50vh;
+    position: relative;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px 2px black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.459);
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.estilo > a{
+    text-decoration: none;
+    text-shadow:rgba(128, 0, 128, 0.795);
+    color: plum;
+}
+
+.estilo > a:hover{
+    display: grid;
+    color: purple;
+    text-shadow: 1px 2px 5px 2px purple;
+    text-decoration: none;
+}
+
+.estilo:hover{
+    box-shadow: 1px 2px 5px 2px purple;
+    background-attachment: 1px 2px 5px 2px local;
+}
+
+p{
+    text-align: center;
+    margin-top: 20px;
+    color: plum;
+    text-decoration: none;
+}
+
+p:hover{
+    display: grid;
+    color: purple;
+    text-shadow: 1px 2px 5px 2px purple;
+    text-decoration: none;
+}
+
+#beta{
+    margin: 0px;
+    text-decoration: none;
+    color:black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+}
+
