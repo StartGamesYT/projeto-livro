@@ -93,7 +93,7 @@ header{
 }
 
 .estilo{
-    min-width: 150px;
+    min-width: 200px;
     max-width: 500px;
     position: relative;
     text-transform: capitalize;
@@ -107,13 +107,14 @@ header{
     background-color: rgba(0, 0, 0, 0.459);
     list-style-type: none;
     text-decoration: none;
-    font-size: 2vw;
+    font-size: 3vw;
 }
 
 .estilo > a{
     text-decoration: none;
     text-shadow:rgba(128, 0, 128, 0.795);
     color: plum;
+    font-size: 1em;
 }
 
 .estilo > a:hover{
