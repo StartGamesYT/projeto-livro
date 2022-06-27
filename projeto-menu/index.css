@@ -35,7 +35,7 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
-    font-size: 1vw;
+    font-size: 2vw;
 }
 
 .menu{
@@ -94,7 +94,7 @@ header{
 
 .estilo{
     min-width: 150px;
-    max-width: 50vh;
+    max-width: 500px;
     position: relative;
     text-transform: capitalize;
     text-align: center;
@@ -107,6 +107,7 @@ header{
     background-color: rgba(0, 0, 0, 0.459);
     list-style-type: none;
     text-decoration: none;
+    font-size: 2vw;
 }
 
 .estilo > a{
