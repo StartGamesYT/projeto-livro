@@ -4,150 +4,103 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: black
 }
-
 body{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 100vh;
+    max-height: 100vh;
     background-image: url(../../Html-Css/desafios/projeto-cordel/imagens/ROG-Flow-X16-scenario-photo-gaming-with-Xbox-controller-in-tent-mode.webp);
-    background-position: center center;
-    background-attachment: fixed;
-    min-width: auto;
-    max-width: auto;
 }
-
-h1{
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
-    text-decoration: none;
-    text-decoration-line: none;
-    text-align: center;
-    text-size-adjust: initial;
-    text-shadow: 1px 2px 2px rgb(0, 0, 0);
-    font-size: 2em;
-    text-decoration-style: wavy;
-    margin-top: 20px;
-    
-
-}
-
-section{
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    line-height: 2em;
-    padding-left: 30px;
-    font-size: 3vw;
-}
-
-.menu{
-    box-shadow: 1px 2px 2px rgba(85, 6, 85, 0.651);
-}
-.menu p{
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    text-decoration: none;
-}
-
-.menu h1{
-    color: white;
-    text-align: center;
-    padding-top: 10px;
-}
-
-.menu ul{
-    list-style: georgian;
-    padding: 0px;
-    padding-top: 0px;
-    background-color: black;
-    text-align: end;
-    padding-bottom: 5px;
+.container .container_card .imagem{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(119, 13, 218);
     border-radius: 5px;
 }
-
-.menu ul li{
-    display: inline;
-}
-.menu ul a{
-    color: white;
-    padding: 20px;
-    display: inline-block;
-    text-decoration: aqua;
-    transition: background .4s;
-    text-align: end;
-}
-
-.menu ul a:hover{
-    background-color: rgb(13, 160, 228);
-    border-radius: 10px;
+.container .container_card .imagem img{
+    width: 190px;
+    height: 90%;
+    border-radius: 50%;
+    border: 2px dashed rgb(3, 6, 156);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
 }
 
-header{
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    text-align: center;
-    box-shadow: inset;
-    position: sticky;
-    border-radius: 3px;
+.container .container_card .card{
+    width: 250px;
+    height: 200px;
+    transition: .5s;
+    border-radius: 5%;
+    
 }
 
-.estilo{
-    min-width: 200px;
-    max-width: 500px;
+.container .container_card .card.card_1{
     position: relative;
-    text-transform: capitalize;
-    text-align: center;
-    margin-top: 50px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 1px 2px 5px 2px black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: rgba(0, 0, 0, 0.459);
-    list-style-type: none;
-    text-decoration: none;
-    font-size: 3vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    z-index: 1;
+    transition: .6s;
+    transform: translateY(100px);
 }
-
-.estilo > a{
-    text-decoration: none;
-    text-shadow:rgba(128, 0, 128, 0.795);
-    color: plum;
-    font-size: 1em;
+.container .container_card:hover .card.card_1{
+    transform: translate(0px);
 }
-
-.estilo > a:hover{
-    display: grid;
+.container .container_card .card.card_2{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition: .5s;
+    transform: translateY(-100px);
+    box-shadow: 5px 5px 30px 5px purple;
+}
+.container .container_card:hover .card.card_2{
+    transform: translateY(0px);
+    background-color: white;
+}
+.container .container_card .card.card_2 h3{
+    margin: 0 0 5px 0;
+    font-size: 24px;
+    padding: 0;
+    color: rgb(219, 28, 219);
+}
+.container .container_card .card.card_2 h4{
+    color: gray;
+}
+.container .container_card .card.card_2 p{
+    color: gray;
+    font-size: 14px;
+    padding: 5px;
+}
+.container .container_card .card.card_2::after{
+    content: "";
+    background: linear-gradient( to right, purple, blue, rgb(0, 255, 76));
+    position: absolute;
+    width: 70px;
+    height: 5px;
+    bottom: 10px;
+    border-radius: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+a{
+    text-decoration: none;
+    color: gray;
+}
+a:hover{
+    text-decoration: none;
+    text-shadow: 0px 5px 5px purple;
     color: purple;
-    text-shadow: 1px 2px 5px 2px purple;
-    text-decoration: none;
 }
-
-.estilo:hover{
-    box-shadow: 1px 2px 5px 2px purple;
-    background-attachment: 1px 2px 5px 2px local;
-}
-
-p{
-    text-align: center;
-    margin-top: 20px;
-    color: plum;
-    text-decoration: none;
-}
-
-p:hover{
-    display: grid;
-    color: purple;
-    text-shadow: 1px 2px 5px 2px purple;
-    text-decoration: none;
-}
-
-#beta{
-    margin: 0px;
-    text-decoration: none;
-    color:black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: large;
-}
-
