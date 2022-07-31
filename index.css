@@ -130,7 +130,6 @@ footer{
 
 body{
     height: 100vh;
-    background-size: contain;
     background-repeat: cover;
     background-image: url(IMG-20220616-WA0010-G.jpg);
     background-attachment: fixed;
